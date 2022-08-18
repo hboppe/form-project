@@ -21,12 +21,12 @@
             
                         <div id="top">
                             <label for="iname">Name</label>
-                            <input type="text" name="name" id="iname" placeholder="Full name" autocomplete="name"> <br><br>
+                            <input type="text" name="name" id="iname" placeholder="Full name" autocomplete="name" required> <br><br>
                             <label for="imember">Are you a member?</label> <br>
                             <input type="radio" name="member" id="imember"> Member
                             <input type="radio" name="member" id="imember"> Non-member <br><br>
                             <label for="iemail">Email</label>
-                            <input type="email" name="email" id="iemail" autocomplete="email"><br>
+                            <input type="email" name="email" id="iemail" autocomplete="email" required><br>
                         </div>
             
                 </fieldset>
@@ -38,8 +38,8 @@
                          <option value="rac">Racquetball</option>
                     </select>
                     <br><br><p>Select a reservation date and time:</p><br>
-                    <input type="date" name="date" id="idate">
-                    <input type="time" name="time" id="itime"> <br> <br>
+                    <input type="date" name="date" id="idate" required>
+                    <input type="time" name="time" id="itime" required> <br> <br>
                     <input type="checkbox" name="agree" id="iagree" required> <label for="iagree">I agree to the club's reservations policy</label> <br><br>
                     <input type="submit" value="Submit" id="button">
                 </div>
