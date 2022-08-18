@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>Welcome do the 24x7 Fitness Club: Courts Reservation Page!</p>
+    </header>
+
+    <main>
+        <section>
+            <form action="action_page.php" method="post" autocomplete="on">
+                <fieldset>
+                    <legend> <strong>Member Dermographics</strong></legend>
+            
+                        <div id="top">
+                            <label for="iname">Name</label>
+                            <input type="text" name="name" id="iname" placeholder="Full name" autocomplete="name"> <br><br>
+                            <label for="imember">Are you a member?</label> <br>
+                            <input type="radio" name="member" id="imember"> Member
+                            <input type="radio" name="member" id="imember"> Non-member <br><br>
+                            <label for="iemail">Email</label>
+                            <input type="email" name="email" id="iemail" autocomplete="email"><br>
+                        </div>
+            
+                </fieldset>
+                <div>
+                    <br><label for="ifac">Facilitity</label>
+                    <select name="fac" id="ifac">
+                        <option value="badminton">Badminton</option>
+                        <option value="squash">Squash</option>
+                         <option value="rac">Racquetball</option>
+                    </select>
+                    <br><br><p>Select a reservation date and time:</p><br>
+                    <input type="date" name="date" id="idate">
+                    <input type="time" name="time" id="itime"> <br> <br>
+                    <input type="checkbox" name="agree" id="iagree" required> <label for="iagree">I agree to the club's reservations policy</label> <br><br>
+                    <input type="submit" value="Submit" id="button">
+                </div>
+            </form>
+        </section>
+
+
+        
+    </main>
+</body>
+</html>
